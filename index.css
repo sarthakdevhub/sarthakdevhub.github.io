@@ -4,10 +4,13 @@
     font-family: 'Poppins',Monospace;
     box-sizing: border-box;
 }
-/* body{
-    background-color: rgb(220, 218, 218);   
-    color: rgb(47, 4, 75);  
-} */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: rgb(220, 218, 218);   
+    color: rgb(47, 4, 75);   */
+}
 
 /* <---------------------------------------------HEADER----------------------------------------> */
 #header{
@@ -42,12 +45,16 @@ nav{
     background-color: rgb(47, 4, 75);
     /* position: fixed; */
     /* border: 1px solid rebeccapurple;  */
+    z-index: 2;
+    overflow: hidden;
+    /* background-color: #03326f; */
+    padding: 0;
 }
 /* nav>*{
     border: 1px solid rebeccapurple; 
 }  */
 .logo{
-    width: 120px;
+    width: 100px;
 }
 nav>ul>li{
     display: inline-block;
@@ -74,14 +81,15 @@ nav>ul>li>a:hover::after{
     width: 100%;
 }
 .header_text{
-    margin-top: 25%;
+    margin-top: 24%;
     font-size: 30px;
-    /* display: flex; */
+    display: grid;
     /* border: 1px solid red; */
     /* align-items: center;
-    justify-content: space-between;
-    gap: 10px; */
+    justify-content: space-between; */
+    gap: 30%;
     text-align: center;
+    width: 100%;
 }
 /* .header_text>div{
     border: 1px solid rebeccapurple;
@@ -93,6 +101,19 @@ nav>ul>li>a:hover::after{
 }
 .header_text>div>h1>span{
     color: rebeccapurple;
+}
+#res_btn>a{
+    background-color:rgb(220, 218, 218) ;
+    color: rgb(47, 4, 75);
+    margin: auto;
+    width: 14%;
+    padding: 10px 15px;
+    border-radius: 9px;
+    text-decoration: none;
+}
+#res_btn>a:hover{
+    background-color:rebeccapurple ;
+    color: rgb(47, 4, 75);
 }
 #resume{
     /* border: 2px solid rgb(255, 255, 255); */
@@ -115,41 +136,296 @@ nav>ul>li>a:hover::after{
     filter: brightness(85%);
 }
 
-/* <---------------------------------------------ABOUT----------------------------------------> */
+/* <--------------------------------------------------------------ABOUT-----------------------------------------------------------> */
 
+@media only screen and (max-width: 600px) {
+    
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
 #about{
-    padding: 80px 0;
+    padding: 10% 0;
     /* width: 100%; */
     /* height: 100vh; */
     /* background-size: cover; */
     /* background-position: center; */
-     background-color: rgb(220, 218, 218);   
+    background-color: rgb(220, 218, 218);   
     color: rgb(47, 4, 75);
+    /* border: 1px solid red; */
 }
 .a-container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-.a-container>div{
     /* border: 1px solid red; */
 }
 #l-about{
     flex-basis: 35%;
 }
 #l-about>img{
-    width: 60%;
+    /* position:absolute; */
+    width: 70%;
     /* border: 1px solid red; */
-    filter: brightness(90%);
     border-radius: 15px;
+    box-shadow: rebeccapurple 0px 2px 8px 0px;
 }
 #r-about{
     flex-basis: 60%;
     display: grid;
 }
 #r-about>p{
-    font-size: 110%;
+    font-size: 120%;
 }
+
+/* <----------------------------------------------SERVICES---------------------------------------------------> */
+
+#skill{
+    padding: 6% 0;
+    /* border: 1px solid red; */
+    background-color: rgb(47, 4, 75);   
+    color: rgb(220, 218, 218);
+}
+#skill-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 50px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    /* border: 1px solid red; */
+    justify-items: center;
+}
+#skill-list>div{
+    /* border: 1px solid red; */
+    /* margin: auto; */
+    border-radius: 10px;
+    padding: 30px;
+    width: 70%;
+    /* box-shadow: black 0px 2px 5px 0px; */
+    transition: background 0.5s,transform 0.5s;
+}
+#skill-list>div:hover{
+    background: rgb(220, 218, 218);
+    transform: translateY(-10px);
+}
+#skill-list>div>img{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+/* <---------------------------------------------------stats-------------------------------------------------> */
+#stats{
+    padding: 6% 0;
+    color: rgb(47, 4, 75);   
+    background-color: rgb(220, 218, 218);
+}
+.stat-card{
+    display: grid;
+    gap: 30px;
+}
+#stat-div{
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid red; */
+}
+#stat-div>div>img{
+    width: 100%;
+}
+#stat-graph>img{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.stat-edit{
+    box-shadow: rebeccapurple 0px 2px 8px 0px;
+}
+/* <-----------------------------------------------project-----------------------------------------------> */
+#project{
+    background: rgb(47, 4, 75);
+    padding: 6% 0;
+    color:rgb(220, 218, 218);
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+.swiper {
+    width: 90%;
+    height: 100%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 60px;
+}
+.swiper-wrapper{
+    /* border: 1px solid red; */
+    /* padding: 10px; */
+    display: flex;
+    /* transition: transform .2s; */
+    color: rgb(220, 218, 218);
+}
+.swiper-wrapper:hover{
+    /* transform: scale(1.5); */
+  }
+.swiper-slide {
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 18px;
+    background: rgb(80, 40, 120);
+    border-radius: 10px;
+    /* padding: 10px; */
+    /* transition: transform .2s; */
+  }
+  .swiper-slide:hover{
+    /* transform: scale(1.1); */
+    /* box-shadow: rebeccapurple 0px 2px 8px 0px; */
+    /* background: rgb(47, 4, 75); */
+  }
+  .pr-txt{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    transition: transform .2s;
+  }
+  .swiper-slide img:hover{
+    transform: scale(1.01);
+  }
+  .swp_nav_btn{
+    color: rgb(220, 218, 218);
+    transition: color 0.3s ease;
+  }
+  .swp_nav_btn:hover{
+    color: rgb(47, 4, 75);
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-txt{
+    display: grid;
+    gap: 20px;
+  }
+  .swiper-txt>div>h2{
+    box-shadow: rgb(47, 4, 75) 0px 2px 8px 0px;
+    background-color: rgb(47, 4, 75);
+    width: 70%;
+    margin: auto;
+  }
+  .swiper-image{
+    padding: 10px;
+  }
+  .swiper-btn{
+    /* border: 1px solid rebeccapurple; */
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+  }
+  .swiper-btn>button{
+    /* margin-top: 20px; */
+    border: 0px solid rgb(47, 4, 75) ;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background:rgb(220, 218, 218) ;
+    color:rgb(47, 4, 75);
+  }
+  .swiper-btn>button:hover{
+    background:rgb(47, 4, 75);
+    color:rgb(220, 218, 218) ;
+    /* box-shadow: rebeccapurple 0px 2px 8px 0px; */
+  }
+  
+  /* <------------------------------------------------------contact-----------------------------------------------------> */
+#contact{
+    background-color: rgb(220, 218, 218) ;
+    color:rgb(47, 4, 75);
+    padding: 6% 0;
+}
+.row{
+    display: flex;
+    /* border: 2px solid rgb(198, 31, 31) ; */
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-left>p{
+    margin-top: 30px;
+}
+.download{
+    margin-top: 30px;
+}
+.download a{
+    /* border: 2px solid rgb(198, 31, 31) ; */
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color:rgb(220, 218, 218) ;
+    background-color:rgb(47, 4, 75);
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.submit-btn{
+    border: 0px solid rgb(198, 31, 31) ;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 14px 60px;
+    color:rgb(220, 218, 218) ;
+    background-color:rgb(47, 4, 75);
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    /* margin-top:200px ; */
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(191, 160, 222);
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    text-align: center;
+    background-color: rgb(47, 4, 75);
+    color: rgb(220, 218, 218) ;
+    padding: 5px;
+}
+#msg{
+    color: rgb(47, 4, 75);
+    margin-top: 10px;
+    display: block;
+}
+
+/* ---------------------------------------------CSS small------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
 
 
 

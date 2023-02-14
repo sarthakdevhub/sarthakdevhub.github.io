@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -13,21 +14,21 @@
             <nav>
                 <img src="images/SB4.png" class="logo" alt="">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li id="resume"><a href="#">Resume</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li id="resume"><a href="images/Sarthak_Bajpai_Resume.pdf" download onclick="window.open('https://drive.google.com/file/d/1dY3xK6YOoSU6gcLp7N_Kr8vvFoOJ47TG/view?usp=sharing');">Resume</a></li>
                 </ul>
             </nav>  
             <div class="header_text">
                 <div id="ht1">
-                <p>Java Backend Developer</p>
+                  <p>Java Backend Developer</p>
                 <h1>Hi, I'm <span>Sarthak</span> Bajpai</h1>
                 </div>
-                <!-- <div id="image">
-                    <img src="images/Untitled_design-removebg-preview.png" alt="">
+                <!-- <div >
+                    <h3 id="res_btn"><a href="images/Sarthak_Bajpai_Resume.pdf" download onclick="window.open('https://drive.google.com/file/d/1dY3xK6YOoSU6gcLp7N_Kr8vvFoOJ47TG/view?usp=sharing');">Resume</a></h3>
                 </div> -->
             </div>
         </div>
@@ -47,12 +48,196 @@
             </div>
         </div>
     </div>
-    <!-- <---------------------------------------------Skills----------------------------------------> -->
+    <!-- <---------------------------------------------Skills----------------------------------------> 
     <div id="skill">
-        
+        <div class="container">
+            <h1 id="skill-head">My Skills</h1>
+            <div id="skill-list">
+                <div>
+                    <img src="https://brandeps.com/icon-download/J/Java-icon-vector-05.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://seeklogo.com/images/S/spring-logo-9A2BC78AAF-seeklogo.com.png" alt="">
+                </div>
+                <div>
+                    <img src="https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://brandeps.com/logo-download/C/CSS-3-logo-vector-01.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://brandeps.com/logo-download/J/JavaScript-logo-vector-01.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://brandeps.com/logo-download/M/MySQL-logo-vector-01.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://brandeps.com/icon-download/G/Git-icon-vector-06.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://brandeps.com/logo-download/H/Hibernate-logo-vector-01.svg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- <------------------------------------------------------stats-------------------------------------------------------->
+    <div id="stats">
+        <div class="container stat-card">
+            <h1></h1>
+            <div id="stat-div">
+                <div>
+                    <img class="stat-edit" src="https://github-readme-stats.vercel.app/api?username=sarthakdevhub&theme=tokyonight" alt="">
+                </div>
+                <div>
+                    <img class="stat-edit" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sarthakdevhub&langs_count=5&theme=tokyonight&layout=compact" alt="">
+                </div>
+                <div>
+                    <img class="stat-edit" src="https://github-readme-streak-stats.herokuapp.com/?user=sarthakdevhub&&theme=tokyonight" alt="">
+                </div>
+            </div>
+            <div id="stat-graph">
+                <img class="stat-edit" src="https://github-readme-activity-graph.cyclic.app/graph?username=sarthakdevhub&theme=tokyo-night" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- <---------------------------------------------------project---------------------------------------------------->
+    <div id="project">
+        <div class="container">
+            <h1 id="project-head">Projects</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-    
+                  <div class="swiper-slide">
+                    <div class="swiper-txt">
+                        <div class="swiper-image">
+                            <img src="images/Screenshot (3).png" alt="">
+                        </div>
+                        <div>
+                            <h2>Revv</h2>
+                        </div>
+                        <div class="pr-txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
+                        </div>
+                        <div class="swiper-btn">
+                            <button>Live Site</button>
+                            <button>GitHub</button>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="swiper-txt">
+                        <div class="swiper-image">
+                            <img src="images/Screenshot (9).png" alt="">
+                        </div>
+                        <div>
+                            <h2>Hotstar</h2>
+                        </div>
+                        <div class="pr-txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
+                        </div>
+                        <div class="swiper-btn">
+                            <button>Live Site</button>
+                            <button>GitHub</button>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="swiper-txt">
+                        <div class="swiper-image">
+                            <img src="images/Screenshot (10).png" alt="">
+                        </div>
+                        <div>
+                            <h2>Revv</h2>
+                        </div>
+                        <div class="pr-txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
+                        </div>
+                        <div class="swiper-btn">
+                            <button>Live Site</button>
+                            <button>GitHub</button>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="swiper-txt">
+                        <div class="swiper-image">
+                            <img src="images/Screenshot (8).png" alt="">
+                        </div>
+                        <div>
+                            <h2>UrbanCompany</h2>
+                        </div>
+                        <div class="pr-txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
+                        </div>
+                        <div class="swiper-btn">
+                            <button>Live Site</button>
+                            <button>GitHub</button>
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-button-next swp_nav_btn"></div>
+                <div class="swiper-button-prev swp_nav_btn"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>sarthakbajpai5675@gmail.com</p>
+                    <p>+91 9685038110</p>
+                    <p>GitHub</p>
+                    <p>Linkedin</p>
+                    <!-- <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-square-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    </div> -->
+                    <div class="download">
+                        <a href="images/Sarthak_Bajpai_Resume.pdf" download onclick="window.open('https://drive.google.com/file/d/1dY3xK6YOoSU6gcLp7N_Kr8vvFoOJ47TG/view?usp=sharing');" >Resume</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> ©️ 2022 All rights reserved.</p>
+    </div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.js"></script>
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="index.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwOdFsr4xmQnNo7u65_W_fQHR27CAMbly1CqWeMOaJHMRqpX1NPnQMfDR1hT8bzQqh2PA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
