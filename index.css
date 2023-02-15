@@ -426,11 +426,11 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 500px) {
     .header_text{
-        margin-top: 75%;
+        margin-top: 81%;
         font-size: 16px;
     }
     .header_text div h1{
-        font-size: 28px;
+        font-size: 23px;
     }
 
     nav .fa-solid{
@@ -496,7 +496,7 @@ nav .fa-solid{
 /* nav .fa-solid{
     display: none;
 } */
-@media only screen and (max-width:928px) and (min-width: 500px)  {
+/* @media only screen and (max-width:928px) and (min-width: 500px)  { */
     .header_text{
         margin-top: 37%;
         font-size: 30px;
