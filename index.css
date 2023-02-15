@@ -424,7 +424,7 @@ form input, form textarea{
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 430px) {
     .header_text{
         margin-top: 81%;
         font-size: 16px;
@@ -478,17 +478,27 @@ nav .fa-solid{
     }
     #skill-list div{
         /* border: 1px solid red; */
-        padding: 8px;
+        padding: 2px;
     }
 
     .stat-card{
         /* border: 1px solid red; */
-        padding: 20px;
+        padding: 10px;
     }
     .row{
         /* border: 1px solid red; */
         display: grid;
         gap: 35px;
+    }
+    .swiper-btn{
+        width: 90%;
+    }
+    .pr-txt{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .movie h2{
+        font-size: 20px;
     }
 }
 
@@ -496,9 +506,9 @@ nav .fa-solid{
 /* nav .fa-solid{
     display: none;
 } */
-/* @media only screen and (max-width:928px) and (min-width: 500px)  { */
+@media only screen and (max-width:928px) and (min-width: 434px)  {
     .header_text{
-        margin-top: 37%;
+        margin-top: 45%;
         font-size: 30px;
     }
     .header_text div h1{
@@ -565,6 +575,7 @@ nav .fa-solid{
     .swiper-btn{
         width: 70%;
     }
+    
 }
 
 
