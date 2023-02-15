@@ -425,8 +425,11 @@ nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width: 430px) {
+    #header{
+        height: 85vh;
+    }
     .header_text{
-        margin-top: 81%;
+        margin-top: 89%;
         font-size: 16px;
     }
     .header_text div h1{
