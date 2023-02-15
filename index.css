@@ -54,7 +54,7 @@ nav{
     border: 1px solid rebeccapurple; 
 }  */
 .logo{
-    width: 100px;
+    width: 90px;
 }
 nav>ul>li{
     display: inline-block;
@@ -137,11 +137,6 @@ nav>ul>li>a:hover::after{
 }
 
 /* <--------------------------------------------------------------ABOUT-----------------------------------------------------------> */
-
-@media only screen and (max-width: 600px) {
-    
-}
-
 
 
 
@@ -334,7 +329,7 @@ nav>ul>li>a:hover::after{
     justify-content: space-between;
     padding: 10px 0 20px;
   }
-  .swiper-btn>button{
+  .swiper-btn a button{
     /* margin-top: 20px; */
     border: 0px solid rgb(47, 4, 75) ;
     border-radius: 5px;
@@ -342,7 +337,7 @@ nav>ul>li>a:hover::after{
     background:rgb(220, 218, 218) ;
     color:rgb(47, 4, 75);
   }
-  .swiper-btn>button:hover{
+  .swiper-btn a button:hover{
     background:rgb(47, 4, 75);
     color:rgb(220, 218, 218) ;
     /* box-shadow: rebeccapurple 0px 2px 8px 0px; */
@@ -363,6 +358,17 @@ nav>ul>li>a:hover::after{
 }
 .contact-left>p{
     margin-top: 30px;
+}
+.contact-left p a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(47, 4, 75);
+}
+.contact-left p a:hover{
+    color: rebeccapurple;
+}
+.contact-left p img{
+    width: 100%;
 }
 .download{
     margin-top: 30px;
@@ -414,10 +420,152 @@ form input, form textarea{
     margin-top: 10px;
     display: block;
 }
-
 /* ---------------------------------------------CSS small------------------------------------------------------------ */
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 500px) {
+    .header_text{
+        margin-top: 75%;
+        font-size: 16px;
+    }
+    .header_text div h1{
+        font-size: 28px;
+    }
 
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
 
+    nav ul{
+        background: rebeccapurple;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 30;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    #r-about,#l-about{
+        flex-basis: 100% ;
+        /* border: 1px solid red; */
+    }
+    #r-about {
+        gap: 20px;
+    }
+    .a-container{
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+        /* flex-wrap: wrap; */
+    /* border: 1px solid red; */
+    }
+    #skill-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #skill-list div{
+        /* border: 1px solid red; */
+        padding: 8px;
+    }
+
+    .stat-card{
+        /* border: 1px solid red; */
+        padding: 20px;
+    }
+    .row{
+        /* border: 1px solid red; */
+        display: grid;
+        gap: 35px;
+    }
+}
+
+/* -----------------------------------------------------css medium-------------------------------------------------------- */
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:928px) and (min-width: 500px)  {
+    .header_text{
+        margin-top: 37%;
+        font-size: 30px;
+    }
+    .header_text div h1{
+        font-size: 28px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: rebeccapurple;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 30;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    /* #r-about,#l-about{
+        flex-basis: 100% ;
+    } */
+    #r-about {
+        gap: 20px;
+    }
+    /* .a-container{
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+    } */
+    #skill-list{
+        grid-template-columns: repeat(4,1fr);
+    }
+    #skill-list div{
+        /* border: 1px solid red; */
+        padding: 8px;
+    }
+
+    .stat-card{
+        /* border: 1px solid red; */
+        padding: 10px 40px;
+    }
+    .row{
+        gap: 35px;
+    }
+    .pr-txt{
+        margin-top: 10px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .swiper-btn{
+        width: 70%;
+    }
+}
 
 
 

@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/SB4.png" class="logo" alt="">
-                <ul>
+                <a href="#"><img src="images/SB4.png" class="logo" alt=""></a>
+                <ul id="side-menu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skill">Skills</a></li>
                     <li><a href="#project">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li id="resume"><a href="images/Sarthak_Bajpai_Resume.pdf" download onclick="window.open('https://drive.google.com/file/d/1dY3xK6YOoSU6gcLp7N_Kr8vvFoOJ47TG/view?usp=sharing');">Resume</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
             </nav>  
             <div class="header_text">
                 <div id="ht1">
                   <p>Java Backend Developer</p>
-                <h1>Hi, I'm <span>Sarthak</span> Bajpai</h1>
+                  <h1>Hi, I'm <span class="type"></span> Bajpai</h1>
                 </div>
                 <!-- <div >
                     <h3 id="res_btn"><a href="images/Sarthak_Bajpai_Resume.pdf" download onclick="window.open('https://drive.google.com/file/d/1dY3xK6YOoSU6gcLp7N_Kr8vvFoOJ47TG/view?usp=sharing');">Resume</a></h3>
@@ -119,8 +122,8 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
                         </div>
                         <div class="swiper-btn">
-                            <button>Live Site</button>
-                            <button>GitHub</button>
+                            <a href="https://hilarious-halva-d4c780.netlify.app/" target="_blank" ><button>Live Site</button></a>
+                            <a href="https://github.com/sarthakdevhub/draconian-throat-1090" target="_blank"><button>GitHub</button></a>
                         </div>
                     </div>
                   </div>
@@ -128,7 +131,7 @@
                   <div class="swiper-slide">
                     <div class="swiper-txt">
                         <div class="swiper-image">
-                            <img src="images/Screenshot (9).png" alt="">
+                            <img src="images/Screenshot (11).png" alt="">
                         </div>
                         <div>
                             <h2>Hotstar</h2>
@@ -137,26 +140,8 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
                         </div>
                         <div class="swiper-btn">
-                            <button>Live Site</button>
-                            <button>GitHub</button>
-                        </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div class="swiper-txt">
-                        <div class="swiper-image">
-                            <img src="images/Screenshot (10).png" alt="">
-                        </div>
-                        <div>
-                            <h2>Revv</h2>
-                        </div>
-                        <div class="pr-txt">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
-                        </div>
-                        <div class="swiper-btn">
-                            <button>Live Site</button>
-                            <button>GitHub</button>
+                            <a href="https://effervescent-licorice-5d5591.netlify.app/" target="_blank" ><button>Live Site</button></a>
+                            <a href="https://github.com/masai-course/sarthak_bajpai_fw21_0373/tree/master/unit-3/sprint-2/day-2/assignments/a1" target="_blank"><button>GitHub</button></a>
                         </div>
                     </div>
                   </div>
@@ -173,11 +158,29 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
                         </div>
                         <div class="swiper-btn">
-                            <button>Live Site</button>
-                            <button>GitHub</button>
+                            <a href="https://idyllic-souffle-d02b04.netlify.app/" target="_blank" ><button>Live Site</button></a>
+                            <a href="https://github.com/shubhambhole99/UrbanCompany" target="_blank"><button>GitHub</button></a>
                         </div>
                     </div>
                   </div>
+
+                  <div class="swiper-slide">
+                    <div class="swiper-txt">
+                        <div class="swiper-image">
+                            <img src="images/Screenshot (10).png" alt="">
+                        </div>
+                        <div>
+                            <h2>Hotstar</h2>
+                        </div>
+                        <div class="pr-txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
+                        </div>
+                        <div class="swiper-btn">
+                            <a href="https://effervescent-licorice-5d5591.netlify.app/" target="_blank" ><button>Live Site</button></a>
+                            <a href="https://github.com/masai-course/sarthak_bajpai_fw21_0373/tree/master/unit-3/sprint-2/day-2/assignments/a1" target="_blank"><button>GitHub</button></a>
+                        </div>
+                    </div>
+                </div>
 
                 </div>
                 <div class="swiper-button-next swp_nav_btn"></div>
@@ -191,10 +194,10 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p>sarthakbajpai5675@gmail.com</p>
+                    <p><a href="mailto: abc@example.com" style="color: rgb(47, 4, 75);">sarthakbajpai5675@gmail.com</a></p>
                     <p>+91 9685038110</p>
-                    <p>GitHub</p>
-                    <p>Linkedin</p>
+                    <p><a href="https://github.com/sarthakdevhub">GitHub</a></p>
+                    <p><a href="https://www.linkedin.com/in/sarthak-bajpai-30b7a6257/">Linkedin</a></p>
                     <!-- <div class="social-icons">
                         <a href=""><i class="fa-brands fa-square-github"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -239,5 +242,14 @@
             form.reset();
         })
         .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".type",{
+        strings:["Sarthak","サルタク"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop:true
     })
   </script>
