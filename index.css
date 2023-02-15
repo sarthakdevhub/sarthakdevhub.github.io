@@ -493,9 +493,9 @@ nav .fa-solid{
 }
 
 /* -----------------------------------------------------css medium-------------------------------------------------------- */
-nav .fa-solid{
+/* nav .fa-solid{
     display: none;
-}
+} */
 @media only screen and (max-width:928px) and (min-width: 500px)  {
     .header_text{
         margin-top: 37%;
