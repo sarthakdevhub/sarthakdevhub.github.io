@@ -12,15 +12,15 @@
 <body>
     <div id="header">
         <div class="container">
-            <nav>
+            <nav id="nav-menu">
                 <a href="#"><img src="images/SB4.png" class="logo" alt=""></a>
                 <ul id="side-menu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skill">Skills</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li id="resume"><a href="images/Sarthak_Bajpai_Resume.pdf" download onclick="window.open('https://drive.google.com/file/d/1dY3xK6YOoSU6gcLp7N_Kr8vvFoOJ47TG/view?usp=sharing');">Resume</a></li>
+                    <li class="nav-link home"><a href="#header">Home</a></li>
+                    <li class="nav-link about"><a href="#about">About</a></li>
+                    <li class="nav-link skills"><a href="#skill">Skills</a></li>
+                    <li class="nav-link projects"><a href="#project">Projects</a></li>
+                    <li class="nav-link contact"><a href="#contact">Contact</a></li>
+                    <li id="resume-button-2" class="nav-link resume"><a href="images/Sarthak_Bajpai_Resume.pdf" download onclick="window.open('https://drive.google.com/file/d/1dY3xK6YOoSU6gcLp7N_Kr8vvFoOJ47TG/view?usp=sharing');">Resume</a></li>
                     <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
@@ -28,7 +28,7 @@
             <div class="header_text">
                 <div id="ht1">
                   <p>Java Backend Developer</p>
-                  <h1>Hi, I'm <span class="type"></span> Bajpai</h1>
+                  <h1 id="user-detail-name">Hi, I'm <span class="type"></span> Bajpai</h1>
                 </div>
                 <!-- <div >
                     <h3 id="res_btn"><a href="images/Sarthak_Bajpai_Resume.pdf" download onclick="window.open('https://drive.google.com/file/d/1dY3xK6YOoSU6gcLp7N_Kr8vvFoOJ47TG/view?usp=sharing');">Resume</a></h3>
@@ -42,11 +42,14 @@
         <div class="container">
             <div class="a-container">
                 <div id="l-about">
-                    <img src="images/sqpic.png" alt="">
+                    <img class="home-img" src="images/sqpic.png" alt="">
                 </div>
                 <div id="r-about">
                     <h1>About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quasi minus natus. Maxime nihil sapiente ab vel nisi, voluptatibus deleniti molestiae distinctio corporis facere quas delectus vitae et eos. Laborum, at blanditiis amet aliquam quibusdam voluptas asperiores suscipit eligendi tempora aut ipsum alias mollitia error veritatis unde autem culpa itaque.</p>
+                    <p id="user-detail-intro">Aspiring Java Backend developer, a lifelong learner, skilled in Front-end and Back-end
+                        development. Knowledge of Java, JavaScript, HTML, and CSS. High adaptability to learn new
+                        technologies quickly. Interested in obtaining Knowledge and building world-class websites while
+                        focusing on organizational goals.</p>
                 </div>
             </div>
         </div>
@@ -55,30 +58,30 @@
     <div id="skill">
         <div class="container">
             <h1 id="skill-head">My Skills</h1>
-            <div id="skill-list">
+            <div id="skill-list" class="skills-card">
                 <div>
-                    <img src="https://brandeps.com/icon-download/J/Java-icon-vector-05.svg" alt="">
+                    <img class="skills-card-img" src="https://brandeps.com/icon-download/J/Java-icon-vector-05.svg" alt="">
                 </div>
                 <div>
-                    <img src="https://seeklogo.com/images/S/spring-logo-9A2BC78AAF-seeklogo.com.png" alt="">
+                    <img class="skills-card-img" src="https://seeklogo.com/images/S/spring-logo-9A2BC78AAF-seeklogo.com.png" alt="">
                 </div>
                 <div>
-                    <img src="https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg" alt="">
+                    <img class="skills-card-img" src="https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg" alt="">
                 </div>
                 <div>
-                    <img src="https://brandeps.com/logo-download/C/CSS-3-logo-vector-01.svg" alt="">
+                    <img class="skills-card-img" src="https://brandeps.com/logo-download/C/CSS-3-logo-vector-01.svg" alt="">
                 </div>
                 <div>
-                    <img src="https://brandeps.com/logo-download/J/JavaScript-logo-vector-01.svg" alt="">
+                    <img class="skills-card-img" src="https://brandeps.com/logo-download/J/JavaScript-logo-vector-01.svg" alt="">
                 </div>
                 <div>
-                    <img src="https://brandeps.com/logo-download/M/MySQL-logo-vector-01.svg" alt="">
+                    <img class="skills-card-img" src="https://brandeps.com/logo-download/M/MySQL-logo-vector-01.svg" alt="">
                 </div>
                 <div>
-                    <img src="https://brandeps.com/icon-download/G/Git-icon-vector-06.svg" alt="">
+                    <img class="skills-card-img" src="https://brandeps.com/icon-download/G/Git-icon-vector-06.svg" alt="">
                 </div>
                 <div>
-                    <img src="https://brandeps.com/logo-download/H/Hibernate-logo-vector-01.svg" alt="">
+                    <img class="skills-card-img" src="https://brandeps.com/logo-download/H/Hibernate-logo-vector-01.svg" alt="">
                 </div>
             </div>
         </div>
@@ -89,13 +92,13 @@
             <h1></h1>
             <div id="stat-div">
                 <div>
-                    <img class="stat-edit" src="https://github-readme-stats.vercel.app/api?username=sarthakdevhub&theme=tokyonight" alt="">
+                    <img id="github-stats-card" class="stat-edit" src="https://github-readme-stats.vercel.app/api?username=sarthakdevhub&theme=tokyonight" alt="">
                 </div>
                 <div>
-                    <img class="stat-edit" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sarthakdevhub&langs_count=5&theme=tokyonight&layout=compact" alt="">
+                    <img id="github-top-langs" class="stat-edit" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sarthakdevhub&langs_count=5&theme=tokyonight&layout=compact" alt="">
                 </div>
                 <div>
-                    <img class="stat-edit" src="https://github-readme-streak-stats.herokuapp.com/?user=sarthakdevhub&&theme=tokyonight" alt="">
+                    <img  id="github-streak-stats" class="stat-edit" src="https://github-readme-streak-stats.herokuapp.com/?user=sarthakdevhub&&theme=tokyonight" alt="">
                 </div>
             </div>
             <div id="stat-graph">
@@ -110,16 +113,16 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide project-card">
                     <div class="swiper-txt">
                         <div class="swiper-image">
                             <img src="images/Screenshot (3).png" alt="">
                         </div>
                         <div class="movie">
-                            <h2>Revv</h2>
+                            <h2 class="project-title">Revv</h2>
                         </div>
                         <div class="pr-txt">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
+                            <p class="project-description">Revv is a self drive car rental service that provides you with all the privacy, fun and convenience of your own car, without the hassles of owning and maintaining one.</p>
                         </div>
                         <div class="swiper-btn">
                             <a href="https://hilarious-halva-d4c780.netlify.app/" target="_blank" ><button>Live Site</button></a>
@@ -128,16 +131,16 @@
                     </div>
                   </div>
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide project-card">
                     <div class="swiper-txt">
                         <div class="swiper-image">
                             <img src="images/Screenshot (11).png" alt="">
                         </div>
                         <div class="movie">
-                            <h2>Hotstar</h2>
+                            <h2 class="project-title">Hotstar</h2>
                         </div>
                         <div class="pr-txt">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
+                            <p class="project-description">Disney+ Hotstar is a subscription video on-demand over-the-top streaming service India and operated by Disney Entertainment,  television and sport content for India.
                         </div>
                         <div class="swiper-btn">
                             <a href="https://effervescent-licorice-5d5591.netlify.app/" target="_blank" ><button>Live Site</button></a>
@@ -146,16 +149,17 @@
                     </div>
                   </div>
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide project-card">
                     <div class="swiper-txt">
                         <div class="swiper-image">
                             <img src="images/Screenshot (8).png" alt="">
                         </div>
                         <div class="movie">
-                            <h2>UrbanCompany</h2>
+                            <h2 class="project-title">UrbanCompany</h2>
                         </div>
                         <div class="pr-txt">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
+                            <p class="project-description">Urban Company is an all-in-one platform that helps users hire premium service professionals.Served over 5 million customers across major metropolitan cities of India,Sydney and Singapore.
+                            </p>
                         </div>
                         <div class="swiper-btn">
                             <a href="https://idyllic-souffle-d02b04.netlify.app/" target="_blank" ><button>Live Site</button></a>
@@ -164,20 +168,22 @@
                     </div>
                   </div>
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide project-card">
                     <div class="swiper-txt">
                         <div class="swiper-image">
                             <img src="images/Screenshot (10).png" alt="">
                         </div>
                         <div class="movie">
-                            <h2>Hotstar</h2>
+                            <h2 class="project-title">Hotstar</h2>
                         </div>
                         <div class="pr-txt">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique asperiores cum ipsa cumque adipisci laboriosam. Cumque officia ex incidunt quas quidem nobis! Facere recusandae sint corporis esse ipsum, ut possimus.</p>
+                            <p class="project-description">
+                                Disney+ Hotstar is a subscription video on-demand over-the-top streaming service India and operated by Disney Entertainment,  television and sport content for India.
+                            </p>
                         </div>
                         <div class="swiper-btn">
-                            <a href="https://effervescent-licorice-5d5591.netlify.app/" target="_blank" ><button>Live Site</button></a>
-                            <a href="https://github.com/masai-course/sarthak_bajpai_fw21_0373/tree/master/unit-3/sprint-2/day-2/assignments/a1" target="_blank"><button>GitHub</button></a>
+                            <a class="project-github-link" href="https://effervescent-licorice-5d5591.netlify.app/" target="_blank" ><button>Live Site</button></a>
+                            <a class="project-deployed-link" href="https://github.com/masai-course/sarthak_bajpai_fw21_0373/tree/master/unit-3/sprint-2/day-2/assignments/a1" target="_blank"><button>GitHub</button></a>
                         </div>
                     </div>
                 </div>
@@ -194,17 +200,17 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><a href="mailto: abc@example.com" style="color: rgb(47, 4, 75);">sarthakbajpai5675@gmail.com</a></p>
-                    <p>+91 9685038110</p>
-                    <p><a href="https://github.com/sarthakdevhub">GitHub</a></p>
-                    <p><a href="https://www.linkedin.com/in/sarthak-bajpai-30b7a6257/">Linkedin</a></p>
+                    <p id="contact-email"><a href="mailto: abc@example.com" style="color: rgb(47, 4, 75);">sarthakbajpai5675@gmail.com</a></p>
+                    <p id="contact-phone">+91 9685038110</p>
+                    <p id="contact-github"><a href="https://github.com/sarthakdevhub">GitHub</a></p>
+                    <p  id="contact-linkedin"><a href="https://www.linkedin.com/in/sarthak-bajpai-30b7a6257/">Linkedin</a></p>
                     <!-- <div class="social-icons">
                         <a href=""><i class="fa-brands fa-square-github"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                         <a href=""><i class="fa-solid fa-envelope"></i></a>
                     </div> -->
                     <div class="download">
-                        <a href="images/Sarthak_Bajpai_Resume.pdf" download onclick="window.open('https://drive.google.com/file/d/1dY3xK6YOoSU6gcLp7N_Kr8vvFoOJ47TG/view?usp=sharing');" >Resume</a>
+                        <a id="resume-button-1" href="images/Sarthak_Bajpai_Resume.pdf" download onclick="window.open('https://drive.google.com/file/d/1dY3xK6YOoSU6gcLp7N_Kr8vvFoOJ47TG/view?usp=sharing');" >Resume</a>
                     </div>
                 </div>
                 <div class="contact-right">
@@ -220,7 +226,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p> ©️ 2022 All rights reserved.</p>
+        <p> ©️ 2023 Sarthak Bajpai All rights reserved.</p>
     </div>
 </body>
 </html>

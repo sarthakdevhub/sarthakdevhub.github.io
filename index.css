@@ -115,16 +115,16 @@ nav>ul>li>a:hover::after{
     background-color:rebeccapurple ;
     color: rgb(47, 4, 75);
 }
-#resume{
+#resume-button-2{
     /* border: 2px solid rgb(255, 255, 255); */
     padding: 10px;
     background-color:rgb(220, 218, 218) ;
     border-radius: 5px;
 }
-#resume>a{
+#resume-button-2>a{
     color:rgb(47, 4, 75) ;
 }
-#resume>a::after{
+#resume-button-2>a::after{
     background:rgb(47, 4, 75);
 }
 #image{
@@ -173,7 +173,7 @@ nav>ul>li>a:hover::after{
     display: grid;
 }
 #r-about>p{
-    font-size: 120%;
+    font-size: 130%;
 }
 
 /* <----------------------------------------------SERVICES---------------------------------------------------> */
