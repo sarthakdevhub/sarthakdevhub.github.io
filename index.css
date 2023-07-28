@@ -539,6 +539,9 @@ nav .fa-solid{
     .movie h2{
         font-size: 20px;
     }
+    .pr-ts p{
+        font-size: 13px;
+    }
     .copyright p{
         /* border: 1px solid red; */
         font-size: 11px;
