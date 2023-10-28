@@ -36,6 +36,16 @@ var swiper = new Swiper(".swiper", {
     sidemenu.style.right = "-200px";
   }
 
+  window.addEventListener("load", function () {
+    // When the page is fully loaded, remove the loading screen.
+    document.querySelector(".loader-container").style.display = "none";
+    document.querySelector("#home").style.display = "block";
+    document.querySelector("#about").style.display = "block";
+    document.querySelector("#skills").style.display = "block";
+    document.querySelector("#stats").style.display = "block";
+    document.querySelector("#projects").style.display = "block";
+    document.querySelector("#contact").style.display = "block";
+  });
 
 
 
